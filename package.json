@@ -35,7 +35,7 @@
     "semistandard": "*",
     "supertest": "^3.0.0"
   },
-  "keywords": [],
+  "keywords": ["express", "log", "filter", "json"],
   "nyc": {
     "exclude": [
       "coverage",

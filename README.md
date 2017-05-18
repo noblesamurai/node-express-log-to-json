@@ -1,25 +1,31 @@
 # Express-log-to-json [![Build Status](https://secure.travis-ci.org/noblesamurai/express-log-to-json.png?branch=master)](http://travis-ci.org/noblesamurai/express-log-to-json) [![NPM version](https://badge-me.herokuapp.com/api/npm/express-log-to-json.png)](http://badges.enytc.com/for/npm/express-log-to-json)
 
-> Log an express req or res to json, filtering out useless noise.
+> Filter out useless noise from an express req before logging.
 
 ## Purpose
 - What problem does this module solve? At least a few sentences.
-PLEASE_FILL_IN_HERE
+A simple function to filter express.req before logging it.  Does a shallow clone.
 
 ## Usage
 
 ```js
-// Several examples of usage.
-// Usually copying and pasting code from the tests and making the code standalone suffices.
-// PLEASE_FILL_IN_HERE
+app.use((req, res) => {
+  result = filter(req);
+  // result is missing certain keys.
+  // see index.js for how filtering is done
+  res.status(200).send({});
+});
 ```
 
 ## API
 
-PLEASE_FILL_IN_HERE
+/**
+ * Filter out useless keys before logging an express req.
+ * @param {http.IncomingRequest} The req to filter.
+ * @returns A shallow copy of req.
+ */
+ main(req) => Object
 
-Note: To regenerate this section from the jsdoc run `npm run docs` and paste
-the output above.
 
 ## Installation
 
