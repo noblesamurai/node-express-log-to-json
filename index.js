@@ -4,7 +4,8 @@ const constructors = [
   require('http').ServerResponse,
   require('http').ClientRequest,
   require('net').Socket,
-  require('express').Route
+  require('express').Route,
+  require('stream').Readable.ReadableState
 ];
 
 /**

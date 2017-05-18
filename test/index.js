@@ -17,7 +17,7 @@ app.use((req, res) => {
 describe('express-log-to-json', function () {
   it('should filter unnecessary keys', function () {
     return request.get('/').then(() => {
-      ['res', 'route', 'connection', 'client', 'socket'].forEach((key) => {
+      ['res', 'route', 'connection', 'client', 'socket', '_readableState'].forEach((key) => {
         expect(result[key]).to.equal(undefined);
       });
     });
