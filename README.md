@@ -1,4 +1,4 @@
-# Express-log-to-json [![Build Status](https://secure.travis-ci.org/noblesamurai/express-log-to-json.png?branch=master)](http://travis-ci.org/noblesamurai/express-log-to-json) [![NPM version](https://badge-me.herokuapp.com/api/npm/express-log-to-json.png)](http://badges.enytc.com/for/npm/express-log-to-json)
+# Express-log-to-json [![Build Status](https://travis-ci.org/noblesamurai/node-express-log-to-json.svg?branch=master)](http://travis-ci.org/noblesamurai/node-express-log-to-json) [![NPM version](https://badge-me.herokuapp.com/api/npm/express-log-to-json.png)](http://badges.enytc.com/for/npm/express-log-to-json)
 
 > Filter out useless noise from an express req before logging.
 
