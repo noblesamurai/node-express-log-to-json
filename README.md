@@ -19,12 +19,14 @@ app.use((req, res) => {
 
 ## API
 
+```js
 /**
  * Filter out useless keys before logging an express req.
  * @param {http.IncomingRequest} The req to filter.
  * @returns A shallow copy of req.
  */
  main(req) => Object
+ ```
 
 
 ## Installation
