@@ -1,6 +1,6 @@
 {
   "name": "express-log-to-json",
-  "description": "Log an express req or res to json, filtering out useless noise.",
+  "description": "Filter out noise from express req before logging.",
   "version": "1.0.0",
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
@@ -21,10 +21,12 @@
     "url": "https://github.com/noblesamurai/express-log-to-json/issues"
   },
   "engines": {
-    "node": "6.x",
+    "node": ">= 6.x",
     "npm": "3.x"
   },
-  "dependencies": {},
+  "peerDependencies": {
+    "express": "*"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
