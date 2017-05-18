@@ -14,7 +14,7 @@ app.use((req, res) => {
   res.status(200).send({});
 });
 
-describe('express-log-to-json', function () {
+describe('express-request-to-json', function () {
   it('should filter unnecessary keys', function () {
     return request.get('/').then(() => {
       ['res', 'route', 'connection', 'client', 'socket', '_readableState'].forEach((key) => {

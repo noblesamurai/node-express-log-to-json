@@ -1,4 +1,4 @@
-# Express-log-to-json [![Build Status](https://travis-ci.org/noblesamurai/node-express-log-to-json.svg?branch=master)](http://travis-ci.org/noblesamurai/node-express-log-to-json) [![NPM version](https://badge-me.herokuapp.com/api/npm/express-log-to-json.png)](http://badges.enytc.com/for/npm/express-log-to-json)
+# express-request-to-json [![Build Status](https://travis-ci.org/noblesamurai/node-express-request-to-json.svg?branch=master)](http://travis-ci.org/noblesamurai/node-express-request-to-json) [![NPM version](https://badge-me.herokuapp.com/api/npm/express-request-to-json.png)](http://badges.enytc.com/for/npm/express-request-to-json)
 
 > Filter out useless noise from an express req before logging.
 
@@ -9,6 +9,7 @@ A simple function to filter express.req before logging it.  Does a shallow clone
 ## Usage
 
 ```js
+let filter = require('express-request-to-json');
 app.use((req, res) => {
   result = filter(req);
   // result is missing certain keys.
@@ -34,7 +35,7 @@ app.use((req, res) => {
 This module is installed via npm:
 
 ``` bash
-$ npm install express-log-to-json
+$ npm install express-request-to-json
 ```
 ## License
 

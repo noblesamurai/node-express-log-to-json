@@ -1,4 +1,4 @@
-const debug = require('debug')('express-log-to-json');
+const debug = require('debug')('express-request-to-json');
 
 const constructors = [
   require('http').ServerResponse,
