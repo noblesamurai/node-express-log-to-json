@@ -14,8 +14,8 @@ const constructors = [
  * @returns A shallow copy of req.
  */
 module.exports = function (req) {
-  let keys = Object.keys(req);
-  let ret = {};
+  const keys = Object.keys(req);
+  const ret = {};
   keys.forEach((key) => {
     if (constructors.some((c) => req[key] instanceof c)) {
       return debug('removing', key, req[key] && req[key].constructor && req[key].constructor.name);
