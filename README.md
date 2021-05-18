@@ -3,32 +3,28 @@
 > Filter out useless noise from an express req before logging.
 
 ## Purpose
-- What problem does this module solve? At least a few sentences.
+
 A simple function to filter express.req before logging it.  Does a shallow clone.
 
 ## Usage
 
 ```js
 let filter = require('express-request-to-json');
-app.use((req, res) => {
-  result = filter(req);
-  // result is missing certain keys.
-  // see index.js for how filtering is done
-  res.status(200).send({});
+app.use('/default', (req, res) => {
+  const result = filter(req);
+  // Result returns only the default whitelisted key values.
+});
+
+app.use('/extra', (req, res) => {
+  const extra = [
+    'video', // The whole video object
+    ['headers', ['x-id', 'x-fubar']] // The 'x-id' and 'x-fubar' keys in the header object
+  ];
+  const result = filter(req, extra);
+  // Result returns only the default whitelisted key values as well as the
+  // extra passed in key values.
 });
 ```
-
-## API
-
-```js
-/**
- * Filter out useless keys before logging an express req.
- * @param {http.IncomingRequest} The req to filter.
- * @returns A shallow copy of req.
- */
- main(req) => Object
- ```
-
 
 ## Installation
 
@@ -37,6 +33,7 @@ This module is installed via npm:
 ``` bash
 $ npm install express-request-to-json
 ```
+
 ## License
 
 The BSD License
