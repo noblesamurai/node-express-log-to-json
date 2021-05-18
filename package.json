@@ -5,6 +5,9 @@
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "coverage": "c8 npm test",
     "pretest": "semistandard --env mocha",
