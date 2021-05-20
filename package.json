@@ -1,7 +1,7 @@
 {
   "name": "express-request-to-json",
   "description": "Filter out noise from express req before logging.",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0",
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
   "main": "index.js",
