@@ -34,6 +34,20 @@ This module is installed via npm:
 $ npm install express-request-to-json
 ```
 
+## Contributing
+
+### Prerequisites
+
+```
+$ pip install pre-commit
+```
+
+### Installation
+
+```
+$ pre-commit install --install-hooks
+```
+
 ## License
 
 The BSD License
